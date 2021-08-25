@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo $(date "+%d/%m/%y")";"$(date "+%H:%M:%S")";"$(vcgencmd measure_temp | cut -d = -f 2)";"$(gpio -g read 14)
+
